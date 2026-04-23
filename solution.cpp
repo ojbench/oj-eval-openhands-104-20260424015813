@@ -79,7 +79,11 @@ int main() {
         }
     }
     
-    cout << min_distance << endl;
+    if (min_distance == INT_MAX) {
+        cout << -1 << endl;
+    } else {
+        cout << min_distance << endl;
+    }
     
     return 0;
 }
